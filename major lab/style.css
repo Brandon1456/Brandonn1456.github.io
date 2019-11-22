@@ -1,0 +1,54 @@
+<section><style>
+  header-site{
+   background: #0079c1 url(//cdn.shopify.com/s/files/1/0042/9942/t/11/assets/bg_nav.png?515) 100% 100% top right no-repeat;
+    };</style></section>
+section{
+  display: flex;
+  flex-flow: row wrap;
+}
+break{
+  flex-basis: 100%;
+  width: 0px; 
+  height: 0px; 
+  overflow: hidden;
+}
+section , break{ 
+  display: inline-block; 
+}
+.flexcontainer {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+}
+
+.flexcontainer {
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-flow: row wrap;
+   align-content: flex-end;
+}
+      
+.flex-container {
+    display: flex;
+}
+.item {
+    background: orange;
+    padding: 10px auto;
+    color: #fff;
+    font-family: arial;
+    flex-grow: 100;
+    flex-shrink: 50;
+    text-align: center;
+}
+.first {
+    order: 1;
+}
+.second {
+    order: 2;
+}
+.third {
+    order: 3;
+}

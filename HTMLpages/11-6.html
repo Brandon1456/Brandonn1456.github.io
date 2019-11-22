@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<script>function filterResults(){
+    let inputElement = document.getElementById("searchInput");
+    let searchValue = inputElement.value.toUpperCase();
+    
+    let pokemon = document.getElementsByClassName("pokemon-card");
+    
+    for(i= 0; i <pokemon.length;  i++){
+    let poketext= pokemon[i].textContent;
+    
+    if(poketext.toUpperCase().indexOf(searchValue) > -1) {
+    pokemon[i].style.display="";
+    }
+    else{ 
+    pokemon[i].style.display ="none";
+         }
+       }
+    }</script>
+<body>
+    
+    <h1>
+    Pokemon Search
+    </h1>
+    <div><input type="searchInput" onkeyup="filterResults()"placeholder="Search for pokemon name or type."></div>
+    <section><div class="pokemon-card grass">
+        
+        </div>
+    </section>
+    <style>.grass{background-color: #DEFDE0;}</style>
+      <style>.fire{background-color: #FDDFDF;}</style>
+      <style>.electric{background-color: #FCF7DE;}</style>
+      <style>.water{background-color: #DEF3FD;}</style>
+      <style>.ground{background-color: #f4e7da;}</style>
+      <style>.rock{background-color: #d5d5d4;}</style>
+      <style>.poison{background-color: #b19cd9;}</style>
+      <style>.bug{background-color: #f8d5a3;}</style>
+      <style>.dragon{background-color: #97b3e6;}</style>
+      <style>.psychic{background-color: #eaeda1;}</style>
+      <style>.flying{background-color: #F5F5F5;}</style>
+      <style>.fighting{background-color: #E6E0D4;}</style>
+      <style>.normal{background-color: #F5F5F5;}</style>
+     <style>.ice{background-color: #66ccff;}</style>
+    <style>body > div{ max-width: 300px;
+    margin: auto;
+        }</style>
+    <style>::placeholder{
+    color: white;
+        }</style>
+  <style>#searchInput{
+    width:100%;
+    padding: 10px 5px 10px 5px;
+    border: none;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    font-family: 'roboto';
+    font-size: 15px;
+      }</style>
+    <style>poke-card grass{
+    padding:20px;
+    margin-left:10px;
+    margin-top:10px;
+    background-color:rgba(255,255,255,0.6)
+        margin-top:30px;
+        height: 212px;
+        width: 120px;
+        }</style>
+    <style>.img-container{ width:120px;
+    height: 120px;
+        rgba(255,255,255,0.6);}</style>
+    <style>.name{ font-size: 15px;
+        font-weight: bold;}</style>
+    <style>.type{font-size: 5px;}</style>
+    <style>.number{ font-size: 5px;
+    rgba(0,0,0,0.1)
+        padding:5px 10px 5px 10px;}</style>
+    <img src="pokemon-images/images/1-bulbasaur-grass.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/2-ivsaur-grass.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/3-venusaur-grass.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/4-charmander-fire.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/5-charmeleon-fire.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/6-charizard-fire.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/7-squirtle-water.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/8-wartortle-water.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/9-bastoise-water.png"<img style="width: 300px;">
+       <img src="pokemon-images/images/10-caterpie-bug.png"<img style="width: 300px;">
+     <img src="pokemon-images/images/11-metapod-bug.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/12-butterfree-bug.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/13-weedle-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/14-kakuna-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/15-beedril-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/16-pidgey-flying.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/17-pidgeotto-flying.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/18-pidgeot-flying.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/19-rattata-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/20-raticate-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/21-spearow-flying.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/22-fearow-flying.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/23-ekans-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/24-arbok-poison.png"<img style="width: 300px;">
+<img src="pokemon-images/images/25-pikachu-electric.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/26-raichu-electric.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/27-sandshrew-ground.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/28-sandslash-ground.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/29-nidoranF-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/30-nidorina-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/31-nidoqueen-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/32-nidoranM-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/33-nidorino-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/34-nidoking-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/35-clefable-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/36-clefairy-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/37-vulpix-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/38-ninetails-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/39-jigglypuff-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/40-wigglytuff-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/41-zubat-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/42-golbat-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/43-oddish-grass.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/44-gloom-grass.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/45-vileplume-grass.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/46-paras-bug.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/47-parasect-bug.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/48-venonat-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/49-venomoth-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/50-diglet-ground.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/51-dugtrio-ground.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/52-meowth-normal.png"<img style="width: 300px;">
+ <img src="pokemon-images/images/53-persian-normal.png"<img style="width: 300px;">   
+    <img src="pokemon-images/images/54-psyduck-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/55-golduck-water.png"<img style="width: 300px;">
+        <img src="pokemon-images/images/56-mankey-fighting.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/57-primeape-fighting.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/58-growlith-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/59-arcanine-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/60-poliwag-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/61-poliwhirl-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/62-poliwrath-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/63-abra-psychic.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/64-kadabra-psychic.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/65-alakazam-psychic.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/66-machop-fighting.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/67-machoke-fighting.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/68-machamp-fighting.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/69-bellsprout-grass.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/70-weepinbell-grass.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/71-victreebel-grass.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/72-tentacool-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/73-tentacruel-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/74-geodude-rock.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/75-graveler-rock.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/76-golem-rock.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/77-ponyta-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/78-rapidash-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/79-slowpoke-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/80-slowbro-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/81-magnemite-electric.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/82-magneton-electric.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/83-farfetchd-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/84-doduo-flying.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/85-dodrio-flying.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/86-seal-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/87-dewgong-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/88-grimer-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/89-muk-poison.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/90-shellder-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/91-cloyster-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/92-gastly-ghost.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/93-haunter-ghost.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/94-gengar-ghost.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/95-onyx-rock.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/96-drowzee-psychic.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/97-hypno-psychic.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/98-crabby-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/99-kingler-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/100-electrode-electric.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/111-rhyhorn-ground.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/112-rhydon-ground.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/113-chancey-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/114-tangela-grass.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/115-kangaskahn-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/116-horsea-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/117-seadra-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/118-goldeen-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/119-seaking-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/120-staryu-water.png"<img style="width: 300px;">
+        <img src="pokemon-images/images/121-starmie-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/122-mrMime-psychic.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/123-scyther-bug.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/124-jynx-ice.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/125-electabuzz-electric.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/126-magmar-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/127-pinsir-bug.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/128-tauros-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/129-magikarp-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/130-gyarados-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/131-lapras-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/132-ditto-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/133-eevee-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/134-vaporeon-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/135-jolteon-electric.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/136-flareon-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/137-porygon-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/138-omanyte-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/139-omastar-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/140-kabuto-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/141-kabutops-water.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/142-aerodactyl-rock.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/143-snorlax-normal.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/144-articuno-ice.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/145-zapdos-electric.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/146-moltres-fire.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/147-dratnini-dragon.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/148-dragonair-dragon.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/149-dragonite-dragon.png"<img style="width: 300px;">
+    <img src="pokemon-images/images/150-mewtwo-psychic.png"<img style="width: 300px;">
+    
+    </body>
+</html>
